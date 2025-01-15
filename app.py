@@ -5,7 +5,7 @@ load_dotenv()
 import gradio as gr
 import google.generativeai as genai
 
-genai.configure(api_key=os.getenv("AIzaSyANynujtXPe7jgkHqCF8K-ckvFc_wqEVCA"))
+genai.configure(api_key=os.getenv("API-KEY"))
 
 def get_gemini_response(question):
     model = genai.GenerativeModel('gemini-pro')
